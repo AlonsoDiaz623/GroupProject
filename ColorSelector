@@ -1,0 +1,36 @@
+/**
+ * Author: Gabriel Williams
+ * Class: CSC-331-001
+ * Date: 4/17/2026
+ * Purpose: A color sequence that can pair with JavaFx for a Simon Says colors game.
+ */
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class ColorSelector {
+    //ColorSelector will generate the color sequences and reset the color sequences 
+
+    private final String[] colors = {"RED", "BLUE", "GREEN", "YELLOW"}; //The colors
+    private final Random rand = new Random();//sets up random to be used later
+
+    //Stores simon says sequence
+    private final List<String> sequence = new ArrayList<>();
+    
+    public void addNextColor() {
+        //add one new random color each round
+        String next = colors[rand.nextInt(colors.length)];
+        sequence.add(next);
+    }
+    
+    public List<String> getSequence() {
+        //returns full sequence
+        return sequence;
+    }
+    
+    public void reset() {
+        //resets colors
+        sequence.clear();
+    }
+}
