@@ -1,0 +1,27 @@
+utilities:
+flashAndPlay: lights up pad an plays tone
+BrightStyle: makes it look like button is lighting up (lighter version of default color)
+playTone: plays a note based on a value and uses getMidiNote to play it
+initializeSound: prepares the synth utility and sets which instrument noise will be used and makes sure the synth works
+
+Abstract classes: none are changed
+getBrightStyle
+getMidiNote
+
+Display:
+scoreLabel keeps the current score updated for the player
+highScoreLabel keeps the global high score for the program
+
+Game Logic:
+userPattern is the order of buttons that the user pushes that is cleared everytime the gamePattern is played
+gamePattern is the pattern which the user should follow and each round it appends a new random pad 1-4 to the pattern adding a new step each round
+
+
+Buttons: 
+Start resets current score, clears the game pattern, clears user input, makes sure it will be the first to make a turn, updates the labels, adds first random button, begins loop for game
+
+    pads = new SimonPad[4];
+    pads[0] = new RedPad(redButton);
+    pads[1] = new GreenPad(greenButton);
+    pads[2] = new YellowPad(yellowButton);
+    pads[3] = new BluePad(blueButton);
