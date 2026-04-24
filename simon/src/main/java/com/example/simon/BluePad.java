@@ -3,7 +3,7 @@
  * 
  * For Simon says color memory game project in class CSC-331
  * 
- * PURPOSE: BluePad controls the bluie pad/button of out memory game which is 1 of 4 
+ * PURPOSE: BluePad controls the blue pad/button of out memory game which is 1 of 4 
  * pads. It extends the complete simon pad and controls the sound and color
  * of specifically the blue pad.
  */
