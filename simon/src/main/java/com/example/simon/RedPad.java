@@ -3,9 +3,9 @@
  * 
  * For Simon says color memory game project in class CSC-331
  * 
- * PURPOSE: RedPad controls the red pad/button of out memory game which is 1 of 4 
- * pads. It extends the complete simon pad and controls the sound and color
- * of specifically the red pad.
+ * PURPOSE: RedPad controls the red pad/button of our memory game 
+ * which is 1 of 4 pads. It extends the complete simon pad and controls 
+ * the sound and color of specifically the red pad.
  */
 package application;
 
