@@ -3,7 +3,9 @@
  * 
  * For Simon says color memory game project in class CSC-331
  * 
- * Purpose: 
+ * Purpose: SimonController manages all game logic for the Simon Memory Game,
+ * including button flashes, generation of the pattern, user input and turn, 
+ * and scoring.
  */
 package application;
 
